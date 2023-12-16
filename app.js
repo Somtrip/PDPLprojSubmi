@@ -1,9 +1,9 @@
-// Replace 'YOUR_API_KEY' with your actual YouTube API key
+ 
 const API_KEY = 'AIzaSyBEX3oKWVQ9Ne6HTa_Dd59Rw9BYBKhpnto';
 const VIDEO_ID = 'MZwoTIeAre0';
 
 
-// Load the YouTube IFrame Player API asynchronously
+ 
 function onYouTubeIframeAPIReady() {
     const player = new YT.Player('player', {
         height: '360',
@@ -24,14 +24,14 @@ function onYouTubeIframeAPIReady() {
 }
 
 function onPlayerReady(event) {
-    // You can do something when the player is ready
+    console.log('Player is ready!');
 }
 
 function onPlayerStateChange(event) {
     // You can handle player state changes if needed
 }
 
-// Load YouTube API script
+ 
 const tag = document.createElement('script');
 tag.src = 'https://www.youtube.com/iframe_api';
 const firstScriptTag = document.getElementsByTagName('script')[0];
